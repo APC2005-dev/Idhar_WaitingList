@@ -1417,46 +1417,53 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* Hide video frames on mobile for performance and readability */
-  .cloud-window,
-  .cloud-connector {
-    display: none !important;
-  }
-
   .hero-visual {
-    height: 280px;
+    height: 480px;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
   }
 
   .hero-logo {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
   }
 
   .hero-visual .stamp-ring.r1 {
-    width: 190px;
-    height: 190px;
+    width: 240px;
+    height: 240px;
   }
 
   .hero-visual .stamp-ring.r2 {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
   }
 
-  /* Reposition badges cleanly around the logo */
+  .cloud-window {
+    width: 105px;
+  }
+
+  .cloud-connector {
+    height: 14px;
+    margin: 4px 0;
+  }
+
+  /* Parity with desktop layout positions */
   .orbit-cluster.c1 {
-    top: 10%;
-    left: 2%;
+    top: 0%;
+    left: 0%;
   }
 
   .orbit-cluster.c3 {
-    bottom: 10%;
-    left: 2%;
+    bottom: 0%;
+    left: 6%;
   }
 
+  /* Keep parity with desktop: Home bakery stays below the logo, on the right */
   .orbit-tag.t2 {
-    top: 40%;
-    right: 2%;
-    bottom: auto;
+    bottom: 12%;
+    right: 0%;
+    top: auto;
   }
 }
 
@@ -1526,6 +1533,13 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .hero-visual {
+    transform: scale(0.82);
+    transform-origin: center center;
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
+
   .hero-actions {
     flex-direction: column;
     gap: 12px;
@@ -1544,27 +1558,10 @@ footer {
 
 @media (max-width: 380px) {
   .hero-visual {
-    height: 240px;
-  }
-
-  .hero-visual .stamp-ring.r1 {
-    width: 170px;
-    height: 170px;
-  }
-
-  .hero-visual .stamp-ring.r2 {
-    width: 140px;
-    height: 140px;
-  }
-
-  .hero-logo {
-    width: 110px;
-    height: 110px;
-  }
-
-  .orbit-tag {
-    font-size: 11px;
-    padding: 6px 10px;
+    transform: scale(0.7);
+    transform-origin: center center;
+    margin-top: -55px;
+    margin-bottom: -55px;
   }
 
   .btn {
