@@ -370,7 +370,7 @@ header .brand:hover .brand-mark {
 
 .hero h1 {
   margin-top: 22px;
-  font-size: clamp(38px, 4.6vw, 60px);
+  font-size: clamp(28px, 5.5vw, 56px);
   line-height: 1.08;
 }
 
@@ -1055,7 +1055,7 @@ header .brand:hover .brand-mark {
   border: 1.5px solid var(--line-strong);
   background: var(--white);
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--ink);
   transition: border-color .2s var(--ease), box-shadow .2s var(--ease);
 }
@@ -1348,43 +1348,46 @@ footer {
 @media (max-width: 980px) {
   .hero-inner {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .hero-visual {
-    height: 500px;
+    height: 460px;
     order: -1;
   }
 
   .hero-logo {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .hero-visual .stamp-ring.r1 {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
   }
 
   .hero-visual .stamp-ring.r2 {
-    width: 240px;
-    height: 240px;
+    width: 210px;
+    height: 210px;
   }
 
   .cloud-window {
-    width: 112px;
+    width: 100px;
   }
 
   .cloud-connector {
-    height: 16px;
+    height: 14px;
     margin: 4px 0;
   }
 
   .problem-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .solution-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .counsel {
@@ -1409,6 +1412,51 @@ footer {
 
   .join-inner {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Hide video frames on mobile for performance and readability */
+  .cloud-window,
+  .cloud-connector {
+    display: none !important;
+  }
+
+  .hero-visual {
+    height: 280px;
+  }
+
+  .hero-logo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hero-visual .stamp-ring.r1 {
+    width: 190px;
+    height: 190px;
+  }
+
+  .hero-visual .stamp-ring.r2 {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* Reposition badges cleanly around the logo */
+  .orbit-cluster.c1 {
+    top: 10%;
+    left: 2%;
+  }
+
+  .orbit-cluster.c3 {
+    bottom: 10%;
+    left: 2%;
+  }
+
+  .orbit-tag.t2 {
+    top: 40%;
+    right: 2%;
+    bottom: auto;
   }
 }
 
@@ -1440,11 +1488,15 @@ footer {
   }
 
   .section {
-    padding: 64px 20px;
+    padding: 56px 16px;
   }
 
   .hero {
-    padding: 56px 20px 40px;
+    padding: 48px 16px 32px;
+  }
+
+  .wrap {
+    padding: 0 16px;
   }
 
   .field-row,
@@ -1453,54 +1505,66 @@ footer {
   }
 
   .card {
-    padding: 26px;
+    padding: 24px 20px;
   }
 
+  /* 1-column layout for steps on mobile is much easier to read */
   .steps {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 28px;
   }
 
   .foot-top {
     flex-direction: column;
+    gap: 20px;
   }
 
   .foot-bottom {
     flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .counsel {
+    padding: 32px 20px;
   }
 }
 
 @media (max-width: 380px) {
   .hero-visual {
-    height: 420px;
+    height: 240px;
   }
 
   .hero-visual .stamp-ring.r1 {
-    width: 260px;
-    height: 260px;
+    width: 170px;
+    height: 170px;
   }
 
   .hero-visual .stamp-ring.r2 {
-    width: 210px;
-    height: 210px;
+    width: 140px;
+    height: 140px;
   }
 
   .hero-logo {
-    width: 160px;
-    height: 160px;
+    width: 110px;
+    height: 110px;
   }
 
   .orbit-tag {
     font-size: 11px;
     padding: 6px 10px;
-  }
-
-  .cloud-window {
-    width: 92px;
-  }
-
-  .cloud-connector {
-    height: 12px;
-    margin: 4px 0;
   }
 
   .btn {
