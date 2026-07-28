@@ -1,230 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>idhar — businesses, people, together. Join the waitlist.</title>
-<meta name="description" content="idhar helps small, handmade and home-grown businesses get found, get recognised, and get counselled by people who've done it before. Join the waitlist.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-<link rel="icon" type="image/jpeg" href="{{ url_for('static', filename='images/logo.jpg') }}">
-<link rel="shortcut icon" type="image/jpeg" href="{{ url_for('static', filename='images/logo.jpg') }}">
-<link rel="apple-touch-icon" href="{{ url_for('static', filename='images/logo.jpg') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idhar — businesses, people, together</title>
+  <meta name="description"
+    content="idhar helps small, handmade and home-grown businesses get found, get recognised, and get counselled by people who've done it before. Join the waitlist.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="icon" type="image/jpeg" href="{{ url_for('static', filename='images/logo.jpg') }}">
+  <link rel="shortcut icon" type="image/jpeg" href="{{ url_for('static', filename='images/logo.jpg') }}">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/logo.jpg') }}">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <a href="#top" class="brand">
-      <span class="brand-mark"><img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="idhar logo"></span>
-      <span class="brand-word">idhar</span>
-    </a>
-
-    <a href="#join" class="btn btn-primary"><span class="btn-text-desktop">Join the waitlist</span><span class="btn-text-mobile">Join waitlist</span></a>
-  </nav>
-</header>
-
-<section class="hero" id="top">
-  <div class="blotfield" id="heroBlots"></div>
-  <div class="hero-inner">
-    <div class="reveal">
-      <span class="eyebrow"><span class="dot"></span> Building in the open — help us shape it</span>
-      <h1>Every small business has a story worth reaching. We're making sure it gets <span class="hl">idhar</span>.</h1>
-      <p class="hero-sub">Idhar is a home for the maker selling handmade jewellery from her living room, the baker running a one-person kitchen, the tailor with a waitlist longer than her order book — a place to be found, be recognised, and be guided by people who've grown a small business before.</p>
-      <div class="hero-actions">
-        <a href="#join" class="btn btn-primary">Join the waitlist →</a>
-        <a href="#problem" class="btn btn-ghost">Why we're building this</a>
-      </div>
-      <div class="hero-note">
-        <div class="avatars"><span>J</span><span>B</span><span>T</span><span>+</span></div>
-        <span id="heroCountLine">Joined by founders &amp; supporters, everywhere.</span>
-      </div>
-    </div>
-    <div class="hero-visual reveal">
-      <div class="stamp-ring r1 spin"></div>
-      <div class="stamp-ring r2" style="animation:spin-rev 30s linear infinite;"></div>
-      <div class="hero-logo"><img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="idhar — businesses, people, together"></div>
-
-      <div class="orbit-cluster c1">
-        <div class="orbit-tag t1">💍 Handmade jewellery</div>
-        <div class="cloud-connector"></div>
-        <div class="cloud-window">
-          <div class="cloud-chrome"><span></span><span></span><span></span></div>
-          <video class="cloud-video" autoplay muted loop playsinline preload="metadata">
-            <source src="{{ url_for('static', filename='videos/jewellery-preview.mp4') }}" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="orbit-tag t2">🍞 Home bakery</div>
-
-      <div class="orbit-cluster c3">
-        <div class="orbit-tag t3">🧵 Small-batch clothing</div>
-        <div class="cloud-connector"></div>
-        <div class="cloud-window">
-          <div class="cloud-chrome"><span></span><span></span><span></span></div>
-          <video class="cloud-video" autoplay muted loop playsinline preload="metadata">
-            <source src="{{ url_for('static', filename='videos/clothing-preview.mp4') }}" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="marquee">
-  <div class="marquee-track" id="marqueeTrack">
-    <span><b>Jewellery</b> makers</span>
-    <span><b>Home</b> bakeries</span>
-    <span><b>Clothing</b> &amp; textiles</span>
-    <span><b>Candles</b> &amp; home décor</span>
-    <span><b>Pottery</b> &amp; ceramics</span>
-    <span><b>Skincare</b> &amp; wellness</span>
-    <span><b>Art</b> &amp; illustration</span>
-    <span><b>Gifting</b> &amp; hampers</span>
-  </div>
-</div>
-
-<section class="section" id="problem">
-  <div class="section-head reveal">
-    <span class="eyebrow">The problem</span>
-    <h2>Small doesn't mean unseen. But right now, it often is.</h2>
-    <p>Talk to any founder running a business out of their kitchen, spare room, or a single stall, and the same three walls come up.</p>
-  </div>
-  <div class="problem-grid">
-    <div class="problem-card reveal">
-      <div class="problem-icon">📍</div>
-      <h3>Reachability</h3>
-      <p>Great products, made with real care — stuck within the same twenty phone numbers and one street of foot traffic.</p>
-      <span class="tag">Blocker 01</span>
-    </div>
-    <div class="problem-card reveal">
-      <div class="problem-icon">✨</div>
-      <h3>Recognition</h3>
-      <p>No storefront, no press, no algorithm favouring a one-person brand next to businesses with marketing budgets.</p>
-      <span class="tag">Blocker 02</span>
-    </div>
-    <div class="problem-card reveal">
-      <div class="problem-icon">🤝</div>
-      <h3>Customers</h3>
-      <p>Word of mouth only travels so far. Beyond family and friends, finding people who'd genuinely love what you make is a guessing game.</p>
-      <span class="tag">Blocker 03</span>
-    </div>
-  </div>
-</section>
-
-<section class="section join" id="join">
-  <div class="join-inner">
-    <div class="join-copy reveal">
-      <span class="eyebrow"><span class="dot"></span> Early access</span>
-      <h2>Help us know if this is worth building.</h2>
-      <p>We haven't built the full platform yet — this waitlist is how we find out whether idhar actually solves a real problem, for real people, before we go further.</p>
-      <ul class="join-list">
-        <li><span class="check">✓</span> First to know when idhar opens up</li>
-        <li><span class="check">✓</span> A say in what gets built first</li>
-        <li><span class="check">✓</span> Priority access to counselling, once it's live</li>
-      </ul>
-    </div>
-
-    <div class="card reveal">
-      <form id="waitlistForm" novalidate>
-        <div class="field" id="field-name">
-          <label for="name">Full name</label>
-          <input type="text" id="name" name="name" placeholder="e.g. Rhea Kapoor" autocomplete="name">
-          <span class="error">Enter your full name.</span>
-        </div>
-
-        <div class="field-row">
-          <div class="field" id="field-email">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
-            <span class="error">Enter a valid email address.</span>
-          </div>
-          <div class="field" id="field-age">
-            <label for="age_group">Age group</label>
-            <select id="age_group" name="age_group">
-              <option value="" disabled selected>Select one</option>
-              <option value="13-17">13 – 17</option>
-              <option value="18-24">18 – 24</option>
-              <option value="25-34">25 – 34</option>
-              <option value="35-44">35 – 44</option>
-              <option value="45-54">45 – 54</option>
-              <option value="55+">55+</option>
-            </select>
-            <span class="error">Choose an age group.</span>
-          </div>
-        </div>
-
-        <div class="field" id="field-role">
-          <label>Which describes you best?</label>
-          <div class="role-grid">
-            <label class="role-opt">
-              <input type="radio" name="role" value="founder">
-              <span class="dot"></span> I run a small business
-            </label>
-            <label class="role-opt">
-              <input type="radio" name="role" value="aspiring">
-              <span class="dot"></span> I want to start one
-            </label>
-            <label class="role-opt">
-              <input type="radio" name="role" value="shopper">
-              <span class="dot"></span> I love discovering them
-            </label>
-            <label class="role-opt">
-              <input type="radio" name="role" value="counsellor">
-              <span class="dot"></span> I'd like to counsel founders
-            </label>
-          </div>
-          <span class="error">Tell us which one describes you.</span>
-        </div>
-
-        <div class="field">
-          <label for="message">Anything you'd like us to know? <span style="text-transform:none;font-weight:500;color:var(--ink-faint);">(optional)</span></label>
-          <textarea id="message" name="message" placeholder="What would make idhar genuinely useful for you?"></textarea>
-        </div>
-
-        <div class="submit-row">
-          <button type="submit" class="btn submit-btn" id="submitBtn">
-            <span class="btn-label">Join the waitlist</span>
-            <span class="spinner"></span>
-          </button>
-        </div>
-        <p class="form-note">No spam, ever. Just an email when idhar is ready for you.</p>
-      </form>
-
-      <div class="success-state" id="successState">
-        <div class="success-ring">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#5c0202" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        </div>
-        <h3>You're idhar now.</h3>
-        <p id="successMsg">Thanks for joining — we'll write to you the moment there's something to see.</p>
-        <div class="count-line" id="successCount">You're #215 on the list</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="foot-top">
-      <div class="foot-brand">
+  <header>
+    <nav>
+      <a href="#top" class="brand">
         <span class="brand-mark"><img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="idhar logo"></span>
-        <span class="foot-brand-word">idhar<span>.</span></span>
+        <span class="brand-word">idhar</span>
+      </a>
+
+      <a href="#join" class="btn btn-primary"><span class="btn-text-desktop">Join the waitlist</span><span
+          class="btn-text-mobile">Join waitlist</span></a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="blotfield" id="heroBlots"></div>
+    <div class="hero-inner">
+      <div class="reveal">
+        <span class="eyebrow"><span class="dot"></span> Building in the open — help us shape it</span>
+        <h1>Every small business has a story worth reaching. We're making sure it gets <span class="hl">idhar</span>.
+        </h1>
+        <p class="hero-sub">Idhar is a home for the maker selling handmade jewellery from her living room, the baker
+          running a one-person kitchen, the tailor with a waitlist longer than her order book — a place to be found, be
+          recognised, and be guided by people who've grown a small business before.</p>
+        <div class="hero-actions">
+          <a href="#join" class="btn btn-primary">Join the waitlist →</a>
+          <a href="#problem" class="btn btn-ghost">Why we're building this</a>
+        </div>
+        <div class="hero-note">
+          <div class="avatars"><span>J</span><span>B</span><span>T</span><span>+</span></div>
+          <span id="heroCountLine">Joined by founders &amp; supporters, everywhere.</span>
+        </div>
       </div>
-      <div class="foot-links">
-        <a href="#problem">Why idhar</a>
-        <a href="#join">Join waitlist</a>
+      <div class="hero-visual reveal">
+        <div class="stamp-ring r1 spin"></div>
+        <div class="stamp-ring r2" style="animation:spin-rev 30s linear infinite;"></div>
+        <div class="hero-logo"><img src="{{ url_for('static', filename='images/logo.jpg') }}"
+            alt="idhar — businesses, people, together"></div>
+
+        <div class="orbit-cluster c1">
+          <div class="orbit-tag t1">💍 Handmade jewellery</div>
+          <div class="cloud-connector"></div>
+          <div class="cloud-window">
+            <div class="cloud-chrome"><span></span><span></span><span></span></div>
+            <video class="cloud-video" autoplay muted loop playsinline preload="metadata">
+              <source src="{{ url_for('static', filename='videos/jewellery-preview.mp4') }}" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="orbit-tag t2">🍞 Home bakery</div>
+
+        <div class="orbit-cluster c3">
+          <div class="orbit-tag t3">🧵 Small-batch clothing</div>
+          <div class="cloud-connector"></div>
+          <div class="cloud-window">
+            <div class="cloud-chrome"><span></span><span></span><span></span></div>
+            <video class="cloud-video" autoplay muted loop playsinline preload="metadata">
+              <source src="{{ url_for('static', filename='videos/clothing-preview.mp4') }}" type="video/mp4">
+            </video>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span>© 2026 idhar — businesses, people, together.</span>
-      <span>Made for the makers, right here, idhar.</span>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-track" id="marqueeTrack">
+      <span><b>Jewellery</b> makers</span>
+      <span><b>Home</b> bakeries</span>
+      <span><b>Clothing</b> &amp; textiles</span>
+      <span><b>Candles</b> &amp; home décor</span>
+      <span><b>Pottery</b> &amp; ceramics</span>
+      <span><b>Skincare</b> &amp; wellness</span>
+      <span><b>Art</b> &amp; illustration</span>
+      <span><b>Gifting</b> &amp; hampers</span>
     </div>
   </div>
-</footer>
 
-<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <section class="section" id="problem">
+    <div class="section-head reveal">
+      <span class="eyebrow">The problem</span>
+      <h2>Small doesn't mean unseen. But right now, it often is.</h2>
+      <p>Talk to any founder running a business out of their kitchen, spare room, or a single stall, and the same three
+        walls come up.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card reveal">
+        <div class="problem-icon">📍</div>
+        <h3>Reachability</h3>
+        <p>Great products, made with real care — stuck within the same twenty phone numbers and one street of foot
+          traffic.</p>
+        <span class="tag">Blocker 01</span>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">✨</div>
+        <h3>Recognition</h3>
+        <p>No storefront, no press, no algorithm favouring a one-person brand next to businesses with marketing budgets.
+        </p>
+        <span class="tag">Blocker 02</span>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-icon">🤝</div>
+        <h3>Customers</h3>
+        <p>Word of mouth only travels so far. Beyond family and friends, finding people who'd genuinely love what you
+          make is a guessing game.</p>
+        <span class="tag">Blocker 03</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section join" id="join">
+    <div class="join-inner">
+      <div class="join-copy reveal">
+        <span class="eyebrow"><span class="dot"></span> Early access</span>
+        <h2>Help us know if this is worth building.</h2>
+        <p>We haven't built the full platform yet — this waitlist is how we find out whether idhar actually solves a
+          real problem, for real people, before we go further.</p>
+        <ul class="join-list">
+          <li><span class="check">✓</span> First to know when idhar opens up</li>
+          <li><span class="check">✓</span> A say in what gets built first</li>
+          <li><span class="check">✓</span> Priority access to counselling, once it's live</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <form id="waitlistForm" novalidate>
+          <div class="field" id="field-name">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name">
+            <span class="error">Enter your full name.</span>
+          </div>
+
+          <div class="field-row">
+            <div class="field" id="field-email">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email-id" autocomplete="email">
+              <span class="error">Enter a valid email address.</span>
+            </div>
+            <div class="field" id="field-age">
+              <label for="age_group">Age group</label>
+              <select id="age_group" name="age_group">
+                <option value="" disabled selected>Select one</option>
+                <option value="13-17">13 – 17</option>
+                <option value="18-24">18 – 24</option>
+                <option value="25-34">25 – 34</option>
+                <option value="35-44">35 – 44</option>
+                <option value="45-54">45 – 54</option>
+                <option value="55+">55+</option>
+              </select>
+              <span class="error">Choose an age group.</span>
+            </div>
+          </div>
+
+          <div class="field" id="field-role">
+            <label>Which describes you best?</label>
+            <div class="role-grid">
+              <label class="role-opt">
+                <input type="radio" name="role" value="founder">
+                <span class="dot"></span> I run a small business
+              </label>
+              <label class="role-opt">
+                <input type="radio" name="role" value="aspiring">
+                <span class="dot"></span> I want to start one
+              </label>
+              <label class="role-opt">
+                <input type="radio" name="role" value="shopper">
+                <span class="dot"></span> I love discovering them
+              </label>
+              <label class="role-opt">
+                <input type="radio" name="role" value="counsellor">
+                <span class="dot"></span> I'd like to counsel founders
+              </label>
+            </div>
+            <span class="error">Tell us which one describes you.</span>
+          </div>
+
+          <div class="field">
+            <label for="message">Anything you'd like us to know? <span
+                style="text-transform:none;font-weight:500;color:var(--ink-faint);">(optional)</span></label>
+            <textarea id="message" name="message"
+              placeholder="What would make idhar genuinely useful for you?"></textarea>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn submit-btn" id="submitBtn">
+              <span class="btn-label">Join the waitlist</span>
+              <span class="spinner"></span>
+            </button>
+          </div>
+          <p class="form-note">No spam, ever. Just an email when idhar is ready for you.</p>
+        </form>
+
+        <div class="success-state" id="successState">
+          <div class="success-ring">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#5c0202" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3>You're idhar now.</h3>
+          <p id="successMsg">Thanks for joining — we'll write to you the moment there's something to see.</p>
+          <div class="count-line" id="successCount">You're #215 on the list</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <span class="brand-mark"><img src="{{ url_for('static', filename='images/logo.jpg') }}"
+              alt="idhar logo"></span>
+          <span class="foot-brand-word">idhar<span>.</span></span>
+        </div>
+        <div class="foot-links">
+          <a href="#problem">Why idhar</a>
+          <a href="#join">Join waitlist</a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 idhar — businesses, people, together.</span>
+        <span>Made for the makers, right here, idhar.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
+
 </html>

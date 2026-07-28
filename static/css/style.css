@@ -1347,12 +1347,12 @@ footer {
    ========================================================= */
 @media (max-width: 980px) {
   .hero-inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 32px;
   }
 
   .hero-visual {
-    height: 460px;
+    height: 480px;
     order: -1;
   }
 
@@ -1418,9 +1418,9 @@ footer {
 
 @media (max-width: 768px) {
   .hero-visual {
-    height: 480px;
+    height: 520px;
     width: 100%;
-    max-width: 440px;
+    max-width: 400px;
     margin: 0 auto;
   }
 
@@ -1440,11 +1440,11 @@ footer {
   }
 
   .cloud-window {
-    width: 105px;
+    width: 100px;
   }
 
   .cloud-connector {
-    height: 14px;
+    height: 16px;
     margin: 4px 0;
   }
 
@@ -1459,11 +1459,13 @@ footer {
     left: 6%;
   }
 
-  /* Keep parity with desktop: Home bakery stays below the logo, on the right */
+  /* Home bakery stays low and to the right, like on desktop — level with
+     the (narrower) clothing *window*, not its wider tag, so it clears
+     c3 horizontally without sitting on top of the logo. */
   .orbit-tag.t2 {
-    bottom: 12%;
-    right: 0%;
     top: auto;
+    bottom: 18%;
+    right: 4%;
   }
 }
 
@@ -1534,10 +1536,55 @@ footer {
 
 @media (max-width: 480px) {
   .hero-visual {
-    transform: scale(0.82);
-    transform-origin: center center;
-    margin-top: -30px;
-    margin-bottom: -30px;
+    height: 440px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .hero-logo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hero-visual .stamp-ring.r1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-visual .stamp-ring.r2 {
+    width: 170px;
+    height: 170px;
+  }
+
+  .orbit-tag {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .cloud-window {
+    width: 82px;
+  }
+
+  .cloud-connector {
+    height: 12px;
+    margin: 4px 0;
+  }
+
+  .orbit-cluster.c1 {
+    top: 0%;
+    left: 0%;
+  }
+
+  .orbit-cluster.c3 {
+    bottom: 0%;
+    left: 0%;
+  }
+
+  .orbit-tag.t2 {
+    top: auto;
+    bottom: 18%;
+    right: 4%;
   }
 
   .hero-actions {
@@ -1557,13 +1604,6 @@ footer {
 }
 
 @media (max-width: 380px) {
-  .hero-visual {
-    transform: scale(0.7);
-    transform-origin: center center;
-    margin-top: -55px;
-    margin-bottom: -55px;
-  }
-
   .btn {
     padding: 10px 16px;
     font-size: 13px;
