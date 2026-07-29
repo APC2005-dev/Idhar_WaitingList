@@ -58,17 +58,25 @@
             alt="idhar — businesses, people, together"></div>
 
         <div class="orbit-cluster c1">
-          <div class="orbit-tag t1">💍 Handmade jewellery</div>
+          <div class="orbit-tag t1">🧶 Crochet</div>
           <div class="cloud-connector"></div>
           <div class="cloud-window">
             <div class="cloud-chrome"><span></span><span></span><span></span></div>
             <video class="cloud-video" autoplay muted loop playsinline preload="metadata">
-              <source src="{{ url_for('static', filename='videos/jewellery-preview.mp4') }}" type="video/mp4">
+              <source src="{{ url_for('static', filename='videos/crochet-preview.mp4') }}" type="video/mp4">
             </video>
           </div>
         </div>
-
-        <div class="orbit-tag t2">🍞 Home bakery</div>
+        <div class="orbit-cluster c2">
+          <div class="orbit-tag t2">🥘 Cloud kitchen</div>
+          <div class="cloud-connector"></div>
+          <div class="cloud-window">
+            <div class="cloud-chrome"><span></span><span></span><span></span></div>
+            <video class="cloud-video" autoplay muted loop playsinline preload="metadata">
+              <source src="{{ url_for('static', filename='videos/kitchen-preview.mp4') }}" type="video/mp4">
+            </video>
+          </div>
+        </div>
 
         <div class="orbit-cluster c3">
           <div class="orbit-tag t3">🧵 Small-batch clothing</div>
@@ -133,13 +141,12 @@
     <div class="join-inner">
       <div class="join-copy reveal">
         <span class="eyebrow"><span class="dot"></span> Early access</span>
-        <h2>Help us know if this is worth building.</h2>
+        <h2>Join us and let us know what you think.</h2>
         <p>We haven't built the full platform yet — this waitlist is how we find out whether idhar actually solves a
           real problem, for real people, before we go further.</p>
         <ul class="join-list">
           <li><span class="check">✓</span> First to know when idhar opens up</li>
           <li><span class="check">✓</span> A say in what gets built first</li>
-          <li><span class="check">✓</span> Priority access to counselling, once it's live</li>
         </ul>
       </div>
 
@@ -180,16 +187,16 @@
                 <span class="dot"></span> I run a small business
               </label>
               <label class="role-opt">
-                <input type="radio" name="role" value="aspiring">
-                <span class="dot"></span> I want to start one
+                <input type="radio" name="role" value="freelancer">
+                <span class="dot"></span> I'm a freelancer
               </label>
               <label class="role-opt">
                 <input type="radio" name="role" value="shopper">
                 <span class="dot"></span> I love discovering them
               </label>
               <label class="role-opt">
-                <input type="radio" name="role" value="counsellor">
-                <span class="dot"></span> I'd like to counsel founders
+                <input type="radio" name="role" value="content_creator">
+                <span class="dot"></span> I'm a content creator
               </label>
             </div>
             <span class="error">Tell us which one describes you.</span>

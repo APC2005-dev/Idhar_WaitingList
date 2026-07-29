@@ -543,6 +543,13 @@ header .brand:hover .brand-mark {
   animation-delay: 0.3s;
 }
 
+.orbit-cluster.c2 {
+  top: 10%;
+  left: 35%;
+  flex-direction: column-reverse;
+  animation-delay: 0.3s;
+}
+
 .orbit-cluster.c3 {
   bottom: 0%;
   left: 6%;
