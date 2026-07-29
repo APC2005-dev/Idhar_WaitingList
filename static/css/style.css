@@ -538,21 +538,21 @@ header .brand:hover .brand-mark {
 }
 
 .orbit-cluster.c1 {
-  top: 0%;
-  left: -2%;
+  top: -5%;
+  left: -5%;
   animation-delay: 0.3s;
 }
 
 .orbit-cluster.c2 {
   top: 10%;
-  left: 35%;
+  left: 32%;
   flex-direction: column-reverse;
   animation-delay: 0.3s;
 }
 
 .orbit-cluster.c3 {
-  bottom: 0%;
-  left: 6%;
+  bottom: -15%;
+  left: 4%;
   flex-direction: column-reverse;
   animation-delay: 1.6s;
 }
