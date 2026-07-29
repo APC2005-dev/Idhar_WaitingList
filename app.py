@@ -48,7 +48,7 @@ ALLOWED_AGE_GROUPS = {"13-17", "18-24", "25-34", "35-44", "45-54", "55+"}
 ALLOWED_ROLES = {"founder", "aspiring", "shopper", "counsellor"}
 
 # Shown alongside the real count so the counter doesn't read "0" on day one.
-BASE_OFFSET = 214
+BASE_OFFSET = 50
 
 
 def _configured():
