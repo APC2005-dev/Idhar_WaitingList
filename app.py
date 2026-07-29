@@ -45,7 +45,7 @@ HEADERS = {
 
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 ALLOWED_AGE_GROUPS = {"13-17", "18-24", "25-34", "35-44", "45-54", "55+"}
-ALLOWED_ROLES = {"founder", "aspiring", "shopper", "counsellor"}
+ALLOWED_ROLES = {"founder", "freelancer", "shopper", "content_creator"}
 
 # Shown alongside the real count so the counter doesn't read "0" on day one.
 BASE_OFFSET = 50
