@@ -92,6 +92,7 @@ def api_submit():
     email = (payload.get("email") or "").strip().lower()
     age_group = (payload.get("age_group") or "").strip()
     role = (payload.get("role") or "").strip()
+    business_name = (payload.get("business_name") or "").strip()[:120]
     message = (payload.get("message") or "").strip()
 
     errors = {}
@@ -114,6 +115,9 @@ def api_submit():
         "role": role,
         "message": message or None,
     }
+    # Optional; only sent when filled in.
+    if business_name:
+        row["business_name"] = business_name
 
     try:
         r = requests.post(

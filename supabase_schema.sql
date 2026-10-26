@@ -7,8 +7,14 @@ create table if not exists waitlist_signups (
   email text not null unique,
   age_group text not null,
   role text not null,
-  message text
+  message text,
+  business_name text
 );
+
+-- Already have the table with signups in it? Run just this line — it only adds
+-- the new nullable column; existing rows and data are left untouched
+-- (business_name is NULL for earlier signups). Safe to re-run.
+alter table waitlist_signups add column if not exists business_name text;
 
 -- Row Level Security stays off for this table, which is fine here: the app
 -- only ever talks to Supabase using the secret service_role key from the

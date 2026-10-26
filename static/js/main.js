@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       email: document.getElementById('email').value.trim(),
       age_group: document.getElementById('age_group').value,
       role: roleEl ? roleEl.value : '',
+      business_name: document.getElementById('business_name').value.trim(),
       message: document.getElementById('message').value.trim(),
     };
 
